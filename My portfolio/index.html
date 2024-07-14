@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/1656dcfddc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--The Header Section-->
+    <div id="head">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Jioke Jonathan</h1>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, i am <span>Jioke</span><br>Jonathan from Nigeria</h1>
+
+            </div>
+
+        </div>
+        
+
+    </div>
+    <!--The About Section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="./image/body.png" alt="" width="624" height="100%"></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I came across your profile and noticed your extensive experience at [Company Name]. 
+                        I would greatly appreciate any advice or guidance you could offer on 
+                        how to secure a position within the company. 
+                        If there are any specific steps or recommendations you have, 
+                        I would be very grateful to hear them.</p>
+
+                        <!------------Onclick functionis added to each tab-link for the the click function to work-------->
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>html/css</span><br>SQL</li>
+                                <li><span>React.js</span><br>Javascript</li>
+                                <li><span>Front-end development</span><br>Back-end development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                                <li><span>2019 - 2021</span><br>Team Lead at StartApp LLC.</li>
+                                <li><span>2017 - 20219</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                                <li><span>2016 - 20217</span><br>Internship at ekart eCormerce.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                                <li><span>20216</span><br>MBA from MIT Bangalore.</li>
+                                <li><span>2014</span><br>BBA fromn ISM Bangalore.</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!---SERVICES--->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-end development</h2>
+                    <p>I came across your profile and noticed your extensive experience at [Company Name]. 
+                        I would greatly appreciate any advice or guidance you could offer on 
+                        how to secure a position within the company.</p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Back-end development</h2>
+                    <p>I came across your profile and noticed your extensive experience at [Company Name]. 
+                        I would greatly appreciate any advice or guidance you could offer on 
+                        how to secure a position within the company.</p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Web testing</h2>
+                    <p>I came across your profile and noticed your extensive experience at [Company Name]. 
+                        I would greatly appreciate any advice or guidance you could offer on 
+                        how to secure a position within the company.</p>
+                        <a href="#">learn more</a>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+   <!------------portfolio------------------->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/work-1.jpg" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>came across your profile and noticed your extensive experience at [Company Name]</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="image/work-2.jpg" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>came across your profile and noticed your extensive experience at [Company Name]</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="image/work-3.jpg" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>came across your profile and noticed your extensive experience at [Company Name]</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+        <a href="" class="btn">see more</a>
+
+    </div>
+
+   </div>
+
+   <!-------CONTACT------>
+   <div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>quavjonathan@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i>08103188083</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="linkedin.com/in/chijioke-jonathan-3128072b7"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="image/My-CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <!-----form name will be thesame with const form in the script area-->
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>copyright © Joke. Made with <i class="fa-regular fa-heart"></i>  by Chijioke Jonathan</p>
+    </div>
+
+   </div>
+
+   <!------------------------JAVASCRIPTS----------------------->
+
+   <script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link");
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+   </script>
+
+   <script>
+    var sidemeu = document.getElementById("sidemenu");
+    {/*---the function below call the (right: 0;) in style.css--*/}
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    {/*---the function below call the (right: -200px;) in style.css */}
+    function closemenu(){
+        sidemeu.style.right = "-200px"
+    }
+   </script>
+   
+   <!----To handle the information submited in the form we use google sheet-->
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyIBuVxOeJVL4upo4izu3broKkb-cW-UoxqfVfF7Grs6n7tpnGe-AVRXIlrFDBWxOBo1w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg  = document.getElementById("msg")
+  
+    {/*To change the response we se t the msg.innerHTML = OUR OWN MESSAGE*/}
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+
+
+    
+      
+      
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    
+</body>
+</html>
